@@ -53,7 +53,7 @@ or in the "license" file accompanying this file. This file is distributed on an 
     window.chatClient = new chatClient({
         channel: '#marick2018gogo',
         username: 'marick2003',
-        password: 'oauth:marick91009',
+        password: 'marick91009',
     });
     </script>
 </body>
