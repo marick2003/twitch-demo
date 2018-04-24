@@ -1,5 +1,5 @@
-var clientId = 'marick2003'; 
-var redirectURI = '<YOUR REDIRECT URL HERE>';
+var clientId = '51p1427hb0v80hx4wfyks6g3my0nl6'; 
+var redirectURI = 'https://twitch-demo.herokuapp.com/';
 var scope = 'user_read+chat_login';
 var ws;
 
