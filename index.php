@@ -12,6 +12,7 @@ or in the "license" file accompanying this file. This file is distributed on an 
 <head>
     <title>Leaderboards</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="//cdn.tmijs.org/js/latest/1.x/tmi.min.js"></script>
     <link rel="stylesheet" href="leaderboard.css">
 </head>
 <body>
@@ -51,7 +52,7 @@ or in the "license" file accompanying this file. This file is distributed on an 
     });
 
     window.chatClient = new chatClient({
-        channel: '#marick2018gogo',
+        channel: 'test',
         username: 'GlinomesBot',
         password: 'oauth:nrb4zh87g5mrr3mr4inclp941mu1bj',
     });
