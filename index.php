@@ -52,7 +52,7 @@ or in the "license" file accompanying this file. This file is distributed on an 
 
     window.chatClient = new chatClient({
         channel: '#marick2018gogo',
-        username: 'gogogo',
+        username: 'GlinomesBot',
         password: 'oauth:nrb4zh87g5mrr3mr4inclp941mu1bj',
     });
     </script>
