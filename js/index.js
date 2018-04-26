@@ -12,18 +12,13 @@ or in the "license" file accompanying this file. This file is distributed on an 
 		$("#clipsbutton").on("click", function(e){  
 			/* Clean up existing divs containing clips */
 			$("#clips-display").children().remove();
-			/* GET request for top clips using client id and game */
-			$.get("https://api.twitch.tv/kraken/clips/top", {client_id : $("#client-id").val(), game : $("#game").val(), api_version: "4"})
-				.done(clipsLoaded);
-			/* GET request for search api to get game logo */
-			
 
 			// $.get("https://api.twitch.tv/kraken/search/games", {client_id : $("#client-id").val(), query : $("#game").val(), api_version: "5"})
 			// 	.done(embedgameimage);
 
 
 		    /* GET request for search  game*/		
-		  //  $.get("https://api.twitch.tv/kraken/search/channels", {client_id : $("#client-id").val(), query : $("#game").val(),limit: 20,offset: 1, api_version: "5"})
+		    //  $.get("https://api.twitch.tv/kraken/search/channels", {client_id : $("#client-id").val(), query : $("#game").val(),limit: 20,offset: 1, api_version: "5"})
 				// .done(embedgameimage);
 
 
@@ -31,31 +26,45 @@ or in the "license" file accompanying this file. This file is distributed on an 
 				.done(embedgameimage);
 
 	   		e.preventDefault();   		
-	   	});
+		   });
+		   
+		
+		
+		   $("#streambutton").on("click", function(e){  
+			/* Clean up existing divs containing clips */
+			$("#clips-display").children().remove();
+			/* GET request for top clips using client id and game */
+			$.get("https://api.twitch.tv/kraken/clips/top", {client_id : $("#client-id").val(), game : $("#game").val(), api_version: "4"})
+				.done(clipsLoaded);
+
+
+	   		e.preventDefault();   		
+	    });
 	});
 
 	/*
 	This function takes the JSON data from the Clips API GET response and displays it in <div> tags by creating child tags for clips-display div
 	*/
 	function clipsLoaded(data) {
+		console.log(data);
 		var $clips= $("#clips-display");
 
 		$clips.children().remove();
 
 		data.clips.forEach(function(clip) {
-			//var $iframe = $('<iframe width="640" height="360" frameborder="0" scrolling="no" allowfullscreen="true">');
-			//$iframe.src = clip.embed_url;
+			var $iframe = $('<iframe width="640" height="360" frameborder="0" scrolling="no" allowfullscreen="true">');
+			$iframe.src = clip.embed_url;
 			
 
 
-			//var $iframe =clip.embed_html;
-			//$clips.append($iframe);
+			var $iframe =clip.embed_html;
+			$clips.append($iframe);
 		});
 	}
 
    	function embedgameimage(data) {
 
-   		//console.log(data.streams[0].channel.name);
+   		console.log(data);
 		var $clips= $("#clips-display");
 
 		$clips.children().remove();
