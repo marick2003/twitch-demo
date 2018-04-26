@@ -1,0 +1,48 @@
+/*
+Copyright 2017 Amazon.com, Inc. or its affiliates. All Rights Reserved.
+
+Licensed under the Apache License, Version 2.0 (the "License"). You may not use this file except in compliance with the License. A copy of the License is located at
+
+    http://aws.amazon.com/apache2.0/
+
+or in the "license" file accompanying this file. This file is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
+*/
+
+.page-title{
+	color:#bdf1e9;
+	font-family:'oswald';
+	text-transform:uppercase;
+	font-size:24px;
+}
+.readmore {
+	background: #bdf1e9;
+	color:#000;
+	font-size:20px;
+	border:none;
+	padding:6px 15px;
+	font-family:'oswald';
+	border-radius:4px;
+	-webkit-border-radius:4px;
+	-moz-border-radius:4px;
+}
+
+.post_ttl {
+	color:#fff;
+	font-family:'oswald';
+	text-transform:uppercase;
+	font-weight:normal;
+	font-size:24px;
+}
+input.field { 
+	border:1px solid #525252 ;
+	background:#000 ;   
+	color:#fff ;
+}
+body { 	
+	color:#eaeaea;
+	background: -webkit-linear-gradient(left,  #cecece 0%,#e8e8e8 34%,#e8e8e8 66%,#cecece 100%); /* Chrome10+,Safari5.1+ */
+	font-family: 'pt_sansregular';
+}
+#clipsform label:after{ content:":"; }
+
+#clipsform input { clear:left; width:100%; box-sizing: border-box;}
