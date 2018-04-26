@@ -55,7 +55,7 @@ or in the "license" file accompanying this file. This file is distributed on an 
 
    	function embedgameimage(data) {
 
-   		console.log(data.streams[0].channel.name);
+   		//console.log(data.streams[0].channel.name);
 		var $clips= $("#clips-display");
 
 		$clips.children().remove();
